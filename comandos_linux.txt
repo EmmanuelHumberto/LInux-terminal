@@ -1,0 +1,15 @@
+Treinando comandos no Terminal linux
+
+* Comando pwd, descobrindo o caminho do diretorio Atual 
+
+* O comando whoami, retorna o nome do usuário que está sendo usado. 
+
+* O comando clear, limpando o terminal. 
+
+* O comando echo, no linux é usado para exibir a linha de texto / string que é passada como um argumento. Este é um comando embutido que é usado principalmente em scripts de shell e arquivos em lote para enviar texto de status para a tela ou um arquivo. 
+
+* O comando cat mais [nome do arquivo] exibe seu conteudo no terminal . 
+
+* o comando ls,  lista todos os arquivos e diretórios.
+
+	* o comando ls -la,  lista todos os arquivos e diretórios incluido arq e diretorios oucultos. 
