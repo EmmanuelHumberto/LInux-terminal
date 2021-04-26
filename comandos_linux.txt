@@ -13,3 +13,13 @@ Treinando comandos no Terminal linux
 * o comando ls,  lista todos os arquivos e diretórios.
 
 	* o comando ls -la,  lista todos os arquivos e diretórios incluido arq e diretorios oucultos. 
+
+* Comando Mkdir, criando diretorio .
+
+* Comando rmdir, excuindo diretorio vazio.
+
+* Comando rm -rf, exlcuindo recursivamente arquivos e diretorios.
+ 
+* Comando echo mais caracter coringa '>', cria e direciona a saida de texto entre aspas duplas para dentro do arquivo criado.
+
+* Comando echo mais caracter coringa '>>', direciona a saida de texto entre aspas duplas para dentro do arquivo sem sobre escrever o conteudo.
