@@ -1,26 +1,68 @@
 Treinando comandos no Terminal linux
 
-* Comando pwd, descobrindo o caminho do diretorio Atual 
 
-* O comando whoami, retorna o nome do usuário que está sendo usado. 
+* Descobrindo o caminho do diretorio Atual 
+	> Comando: pwd
 
-* O comando clear, limpando o terminal. 
+* Retorna o nome do usuário que está sendo usado. 
+	> Comando whoami
+
+* Limpando o terminal.
+	> Comando: clear 
 
 * O comando echo, no linux é usado para exibir a linha de texto / string que é passada como um argumento. Este é um comando embutido que é usado principalmente em scripts de shell e arquivos em lote para enviar texto de status para a tela ou um arquivo. 
 
-* O comando cat mais [nome do arquivo] exibe seu conteudo no terminal . 
+* Exibe seu conteudo no terminal . 
+	> Comando: cat mais [nome do arquivo] 
 
-* o comando ls,  lista todos os arquivos e diretórios.
+* Lista todos os arquivos e diretórios.
+	> Comando: ls
 
-	* o comando ls -la,  lista todos os arquivos e diretórios incluido arq e diretorios oucultos. 
+* Lista todos os arquivos e diretórios incluido arq e diretorios oucultos.
+	> Comando: ls -la,  lista todos os arquivos e diretórios incluido arq e diretorios oucultos. 
 
-* Comando Mkdir, criando diretorio .
+* Criando diretorio.
+	> Comando: Mkdir [diretorio]
 
-* Comando rmdir, excuindo diretorio vazio.
+* Excuindo diretorio vazio.
+	> Comando: rmdir [diretorio]
 
-* Comando rm -rf, exlcuindo recursivamente arquivos e diretorios.
- 
-* Comando echo mais caracter coringa '>', cria e direciona a saida de texto entre aspas duplas para dentro do arquivo criado.
+* Exlcuindo recursivamente arquivos e diretorios.
+	> Comando: rm -rf [arquivo | diertorio]
 
-* Comando echo mais caracter coringa '>>', direciona a saida de texto entre aspas duplas para dentro do arquivo sem sobre escrever o conteudo.
-Comando cp, copio o arquivo bemvindo.txt para o arquivo  mensagem.txt.
+* Cria e direciona a saida de texto entre aspas duplas para dentro do arquivo criado.	
+	> Comando: echo ["texto"] mais caracter coringa [>] [Nome_arquivo]
+
+* Direciona a saida de texto entre aspas duplas para dentro do arquivo sem sobre escrever o conteudo.
+	> Comando: echo ["texto"] mais caracter coringa [>>] [Nome_arquivo]
+	
+* Copia o arquivo bemvindo.txt para o arquivo  mensagem.txt.
+	> Comando: cp -r [bemvindo.txt] [mensagem.txt]
+	
+* Copia o arquivo bemvindo.txt para o dentro do diretorio /home/.
+	> Comando: cp -r [bemvindo.txt] /home/
+
+* Movendo arquivos para outros diretorios
+	> Comando: mv [arquivo] [diretorio]
+	
+* Compcatando Aquivos e diretorios
+	> Comnado: zip -r [nome_novo_aquivo_compactado] [Diretorio_com_arquivos_a_serem_compactados]
+	
+* Lendo o conteudo do arquivo compactando.
+	> Comando: unzip -l [nome_arviovo_zip]
+	
+* Descompactando Arquivos Zipados.
+	> unzip -q [nome_arviovo_zip]
+	
+* Compactando Arquivos Tar.gz
+	> Comando: tar -czf  [nome_novo_aquivo_compactado] [Diretorio_com_arquivos_a_serem_compactados]
+
+* Descompactando Arquivos tar.gz.	
+	> Comando: tar -vxzf nome_arviovo_tar.gz
+	
+*	
+	
+	
+	
+
+
