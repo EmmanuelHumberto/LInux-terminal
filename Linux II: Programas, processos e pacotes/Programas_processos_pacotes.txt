@@ -53,10 +53,41 @@ ____________________________________________________
 		> Comando: [processo]&
 --------------------------------------------------------------------------------------------------------
 
+* Utilizando o bash para executar programas.
+	> Comando: sh [nome_programa | arquivo]
+--------------------------------------------------------------------------------------------------------
 
+* Permissões para arquivos e diretorios .
+	 
+	- Leitura (r)
+	- scrita (w) 
+	- Execução (x)
+	
+	- Essas permissões são distribuídas para o dono do arquivo, 
+	ao grupo de usuários e também para outros usuários.
+	
+	- Verificando as permissões de diretorios e arquivos. 
+		> Comando: ls -l 
+		
+			-Interpretando os dados:
+			
+				[-][rw]-[rw]-[r]-- 
+				 |  ↓      ↓    ↓
+				 |  ↓	   ↓   outros usuarios (permmissão leitura) 
+				 |  ↓     Grupo Usuario (permmissão leitura e escrita) 
+				 |  DONO (permmissão leitura e escrita)    
+				 ↓ 
+				 informa que este item não é um diretório		
+		
+	
+	- Atribuindo permissão a arquivos e diretorios.
+		> Comando: chmod +[tipo_permissão]
+		
+	- Retirando permissão a arquivos e diretorios.
+		> Comando: chmod -[tipo_permissão]		
+--------------------------------------------------------------------------------------------------------
 
-
-
+	
 
 
 
