@@ -1,27 +1,56 @@
-Treinando comandos no Terminal linux
+====================================================
+Alura-Treinamneto II: Comandos, Processos e Pacotes.
+====================================================
+
+---Praticando comnados:---
+[ps, top, kiil, killal, pstree, jobs, bg, fg, &%]
+____________________________________________________
+
+
 
 * Descobrir quais os processos que estão sendo executados na máquina e como finalizar tais processos;
 
-	- lista processos no diretorio em que foi chamado.
+	- lista processos no rodando no bash
 		> Comando: ps
 		
-	- lista todos os processos rodando na maquina.	
+	- lista todos os processos rodando na máquina.	
 		> O comando: Ps -e
 		
-	- lista processos filtrado por nome.	
+	- Usando (grep) para retornar processos .	
 		> Comando Ps -ef | grep [nome_programa], 
 		
 	- Encerra o programa.	
-		> Comando kill [-9 numero_do_precesso]
+		> Comando kill -9 [numero_do_precesso]
 		
-* Descobrindo quanto de recurso so sistema está sendo consumido pelos processos
+-------------------------------------------------------------------------------------------------------		
+		
+* Descobrindo quanto de recurso do sistema está sendo consumido pelos processos
 	> Comando: top	
 	
 	- Verificar quantos terminais estão abertos utilizando o comando top
 		> Comando: ps -ef | grep top	
 		
-* Matando todas as intancias que estãao usando o comando top
+* Matando todas as instancias que estãao usando o comando top
 	> Comando killal -9 top.
-			
+--------------------------------------------------------------------------------------------------------	
+
+* Verificando a arvore de processos.
+	> Comnado: pstree
+-------------------------------------------------------------------------------------------------------
+	
+* foreground e background, liberando o bash
+	
+	- Tirando o processo do foreground e colocando em background, liberando o bash
+		1) Inicia o processo pelo terminal:  EX: firefox
+		2) Precione CTRL Z para pausar o processo e voltar a linha de comando.
+		3) Agora com acesso novamente ao bash:
+			> Comando: [jobs] irá exibir o numero do jobs
+			> Comando: [bg numero_jobs]
+		
+	- Voltando processos para o foreground
+		> Comando: [fg numero_jobs]	
+	
+	- Abrindo o processo direto no background
+		> Comando: [processo]&
 
 
