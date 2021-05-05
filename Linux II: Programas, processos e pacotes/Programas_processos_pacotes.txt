@@ -3,7 +3,7 @@ Alura-Treinamneto II: Comandos, Processos e Pacotes.
 ====================================================
 
 ---Praticando comnados:---
-[ps, top, kiil, killal, pstree, jobs, bg, fg, &%]
+[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod]
 ____________________________________________________
 
 
@@ -21,7 +21,6 @@ ____________________________________________________
 		
 	- Encerra o programa.	
 		> Comando kill -9 [numero_do_precesso]
-		
 -------------------------------------------------------------------------------------------------------		
 		
 * Descobrindo quanto de recurso do sistema está sendo consumido pelos processos
@@ -36,9 +35,9 @@ ____________________________________________________
 
 * Verificando a arvore de processos.
 	> Comnado: pstree
--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 	
-* foreground e background, liberando o bash
+* Foreground e Background, liberando o bash
 	
 	- Tirando o processo do foreground e colocando em background, liberando o bash
 		1) Inicia o processo pelo terminal:  EX: firefox
@@ -52,5 +51,18 @@ ____________________________________________________
 	
 	- Abrindo o processo direto no background
 		> Comando: [processo]&
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
