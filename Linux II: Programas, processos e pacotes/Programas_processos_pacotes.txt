@@ -1,1 +1,27 @@
+Treinando comandos no Terminal linux
+
+* Descobrir quais os processos que estão sendo executados na máquina e como finalizar tais processos;
+
+	- lista processos no diretorio em que foi chamado.
+		> Comando: ps
+		
+	- lista todos os processos rodando na maquina.	
+		> O comando: Ps -e
+		
+	- lista processos filtrado por nome.	
+		> Comando Ps -ef | grep [nome_programa], 
+		
+	- Encerra o programa.	
+		> Comando kill [-9 numero_do_precesso]
+		
+* Descobrindo quanto de recurso so sistema está sendo consumido pelos processos
+	> Comando: top	
+	
+	- Verificar quantos terminais estão abertos utilizando o comando top
+		> Comando: ps -ef | grep top	
+		
+* Matando todas as intancias que estãao usando o comando top
+	> Comando killal -9 top.
+			
+
 
