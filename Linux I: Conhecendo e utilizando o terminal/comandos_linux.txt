@@ -23,3 +23,4 @@ Treinando comandos no Terminal linux
 * Comando echo mais caracter coringa '>', cria e direciona a saida de texto entre aspas duplas para dentro do arquivo criado.
 
 * Comando echo mais caracter coringa '>>', direciona a saida de texto entre aspas duplas para dentro do arquivo sem sobre escrever o conteudo.
+Comando cp, copio o arquivo bemvindo.txt para o arquivo  mensagem.txt.
