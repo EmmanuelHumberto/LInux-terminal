@@ -1,10 +1,10 @@
 ====================================================
-Alura-Treinamneto II: Comandos, Processos e Pacotes.
+Alura-Treinamento II: Comandos, Processos e Pacotes.
 ====================================================
 
----Praticando comnados no terminal:---
+---Praticando comandos no terminal:---
 
-[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb,which, sudo, su]
+[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb, which, sudo, su, env, wc  ]
 ______________________________________________________________________________________________________
 
 
@@ -21,7 +21,7 @@ ________________________________________________________________________________
 		> Comando Ps -ef | grep [nome_programa], 
 		
 	- Encerra o programa.	
-		> Comando kill -9 [numero_do_precesso]
+		> Comando kill -9 [numero_do_processo]
 -------------------------------------------------------------------------------------------------------		
 		
 * Descobrindo quanto de recurso do sistema está sendo consumido pelos processos
@@ -30,19 +30,19 @@ ________________________________________________________________________________
 	- Verificar quantos terminais estão abertos utilizando o comando top
 		> Comando: ps -ef | grep top	
 		
-* Matando todas as instancias que estãao usando o comando top
+* Matando todas as instâncias que estão usando o comando top
 	> Comando killal -9 top.
 --------------------------------------------------------------------------------------------------------	
 
-* Verificando a arvore de processos.
-	> Comnado: pstree
+* Verificando a árvore de processos.
+	> Comando: pstree
 --------------------------------------------------------------------------------------------------------
 	
 * Foreground e Background, liberando o bash
 	
 	- Tirando o processo do foreground e colocando em background, liberando o bash
 		1) Inicia o processo pelo terminal:  EX: firefox
-		2) Precione CTRL Z para pausar o processo e voltar a linha de comando.
+		2) Pressione CTRL Z para pausar o processo e voltar a linha de comando.
 		3) Agora com acesso novamente ao bash:
 			> Comando: [jobs] irá exibir o numero do jobs
 			> Comando: [bg numero_jobs]
@@ -58,34 +58,34 @@ ________________________________________________________________________________
 	> Comando: sh [nome_programa | arquivo]
 --------------------------------------------------------------------------------------------------------
 
-* Permissões para arquivos e diretorios .
+* Permissões para arquivos e diretórios .
 	 
 	- Leitura (r)
-	- scrita (w) 
+	- Escrita (w) 
 	- Execução (x)
 	
 	- Essas permissões são distribuídas para o dono do arquivo, 
 	ao grupo de usuários e também para outros usuários.
 	
-	- Verificando as permissões de diretorios e arquivos. 
+	- Verificando as permissões de diretórios e arquivos. 
 		> Comando: ls -l 
 		
 			-Interpretando os dados:
 			
 				[-][rw]-[rw]-[r]-- 
 				 |  ↓      ↓    ↓
-				 |  ↓	   ↓   outros usuarios (permmissão leitura) 
-				 |  ↓     Grupo Usuario (permmissão leitura e escrita) 
-				 |  DONO (permmissão leitura e escrita)    
+				 |  ↓	   ↓   outros usuários (permissão leitura) 
+				 |  ↓     Grupo Usuário (permissão leitura e escrita) 
+				 |  DONO (permissão leitura e escrita)    
 				 ↓ 
 				 informa que este item não é um diretório		
 		
 	
-	- Atribuindo permissão a arquivos e diretorios.
-		> Comando: chmod +[tipo_permissão] [diretorio &| arquivo]
+	- Atribuindo permissão a arquivos e diretórios.
+		> Comando: chmod +[tipo_permissão] [diretório &| arquivo]
 		
-	- Retirando permissão a arquivos e diretorios.
-		> Comando: chmod -[tipo_permissão] [diretorio &| arquivo]	
+	- Retirando permissão a arquivos e diretórios.
+		> Comando: chmod -[tipo_permissão] [diretório &| arquivo]	
 --------------------------------------------------------------------------------------------------------
 
 * Buscando arquivos pelo linux.
@@ -100,25 +100,42 @@ ________________________________________________________________________________
 		> Comando: locate [arquivo]
 ---------------------------------------------------------------------------------------------------------	
 	
-* Descobrindo o dietorio de um programa.
+* Descobrindo o diretório de um programa.
 	> which [programa]
 ---------------------------------------------------------------------------------------------------------
 
-* Novos Usuarios.
+* Novos Usuários.
 
-	- Crinado usuarios.
-		> Comando: sudo Adduser [nome_novo_usuario]
+	- Criando usuários.
+		> Comando: sudo Adduser [nome_novo_usuário]
 	
-	- Logando com novos usuarios
-		> Comando: sudo su [novo_usuario]
+	- Logando com novos usuários
+		> Comando: sudo su [novo_usuário]
+---------------------------------------------------------------------------------------------------------
+* Variáveis de ambiente PATH
+
+	- listando as variáveis de ambiente.
+		> Comando: env
+			
+	- Abrindo o arquivo .bashrc
+		> Comando: [editor] .bashrc &
+		
+	- criando variável de ambiente para executar um programa sem a necessidade 
+	de [./diretório/programa]
+		> Comando: PATH=$PATH:/diretório/arquivo
+
 ---------------------------------------------------------------------------------------------------------
 
+* comando wc pode ser utilizado para contar o número de palavras, caracteres e 
+linhas que um arquivo possui. Junto com o wc podemos utilizar a opção
 
+	 - w para indicar que desejamos contar apenas o número de palavras que existem no arquivo.
+	 - C para indicar que desejamos contar apenas o número de caracteres que existem no arquivo. 
+	 - l para indicar que desejamos contar apenas o número de linhas que existem no arquivo.
+	 
+		> wc [-w &| -c &| -l ] [arquivo]
 
-
-
-
-
+---------------------------------------------------------------------------------------------------------
 
 
 
