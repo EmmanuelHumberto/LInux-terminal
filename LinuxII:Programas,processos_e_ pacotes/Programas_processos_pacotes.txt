@@ -135,9 +135,9 @@ ________________________________________________________________________________
 		> Comando:  wc [-w &| -c &| -l ] [arquivo]
 
 ---------------------------------------------------------------------------------------------------------
-* Instalando e desinstalando programas no linux.
+* Instalando e desinstalando programas no linux com apt.
 
-	- Exemplo: Instalando servidor ftp.
+	- Exemplo: Instalando e desinstalando servidor ftp.
 	
 	  - apt é um sistema de gerenciamento de pacotes do próprio linux.
 	  
@@ -153,15 +153,12 @@ ________________________________________________________________________________
 			
 		- Buscando na lista de pacotes disponíveis, qualquer programa que se encaixe na busca 
 			> Comando: apt-cache search [programa_ftp] 
-			
-		- Busca especifica programas.	
-			> Comando: apt-cache search vs[programa_ftp]
-			
+							
 		- Mostra informações sobre um determinado pacote.
 			> apt-cache show [programa_ftp]	
 			
 		- Instalando programa FTP
-			> Comando: apt-get install vs[programa_ftp]
+			> Comando: apt-get install [programa_ftp]
 			
 		- Iniciando e logando no servidor FTP
 			> Comando: ftp localhost
@@ -173,9 +170,16 @@ ________________________________________________________________________________
 				
 		- Removendo programa FTP.
 			> apt-get remove [programa_ftp]	
-			
 ---------------------------------------------------------------------------------------------------------	
 
-		
+* Instalando e desinstalando programas no linux com dpkg
 
+	- Exemplo: Instalando e desinstalando servidor ftp.
+
+		- Instalando programa 
+			> Comando: sudo dpkg -i [programa_ftp]
+			
+		- Removendo programa 
+			> Comando: sudo dpkg -r [programa_ftp]
+---------------------------------------------------------------------------------------------------------
 
