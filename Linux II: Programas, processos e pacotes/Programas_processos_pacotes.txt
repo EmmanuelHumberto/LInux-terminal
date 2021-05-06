@@ -4,7 +4,7 @@ Alura-Treinamneto II: Comandos, Processos e Pacotes.
 
 ---Praticando comnados no terminal:---
 
-[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb,which]
+[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb,which, sudo, su]
 ______________________________________________________________________________________________________
 
 
@@ -104,7 +104,15 @@ ________________________________________________________________________________
 	> which [programa]
 ---------------------------------------------------------------------------------------------------------
 
+* Novos Usuarios.
+
+	- Crinado usuarios.
+		> Comando: sudo Adduser [nome_novo_usuario]
 	
+	- Logando com novos usuarios
+		> Comando: sudo su [novo_usuario]
+---------------------------------------------------------------------------------------------------------
+
 
 
 
