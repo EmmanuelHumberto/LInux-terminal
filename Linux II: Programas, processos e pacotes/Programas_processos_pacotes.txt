@@ -3,8 +3,8 @@ Alura-Treinamneto II: Comandos, Processos e Pacotes.
 ====================================================
 
 ---Praticando comnados:---
-[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod]
-____________________________________________________
+[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb]
+______________________________________________________________________________________________________
 
 
 
@@ -81,11 +81,25 @@ ____________________________________________________
 		
 	
 	- Atribuindo permissão a arquivos e diretorios.
-		> Comando: chmod +[tipo_permissão]
+		> Comando: chmod +[tipo_permissão] [diretorio &| arquivo]
 		
 	- Retirando permissão a arquivos e diretorios.
-		> Comando: chmod -[tipo_permissão]		
+		> Comando: chmod -[tipo_permissão] [diretorio &| arquivo]	
 --------------------------------------------------------------------------------------------------------
+
+* Buscando arquivos pelo linux.
+	
+	- Instalando o pacote mlocate.
+		> Comando: sudo apt install mlocate
+		
+	- Atualiza banco de dados linux
+		> Comando: updatedb	
+		
+	- Buscando arquivos. 
+		> Comando: locate [arquivo]
+---------------------------------------------------------------------------------------------------------		
+
+
 
 	
 
