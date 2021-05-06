@@ -4,7 +4,8 @@ Alura-Treinamento II: Comandos, Processos e Pacotes.
 
 ---Praticando comandos no terminal:---
 
-[ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb, which, sudo, su, env, wc  ]
+[ ps, top, kiil, killal, pstree, jobs, bg, fg, &, sh, chmod, locate, updatedb, which, sudo, su, env, wc, 
+apt-get, cache search, cache search, apt-get remove ]
 ______________________________________________________________________________________________________
 
 
@@ -65,7 +66,7 @@ ________________________________________________________________________________
 	- Execução (x)
 	
 	- Essas permissões são distribuídas para o dono do arquivo, 
-	ao grupo de usuários e também para outros usuários.
+	  ao grupo de usuários e também para outros usuários.
 	
 	- Verificando as permissões de diretórios e arquivos. 
 		> Comando: ls -l 
@@ -74,10 +75,9 @@ ________________________________________________________________________________
 			
 				[-][rw]-[rw]-[r]-- 
 				 |  ↓      ↓    ↓
-				 |  ↓	   ↓   outros usuários (permissão leitura) 
+				 |  ↓	   ↓   Outros usuários (permissão leitura) 
 				 |  ↓     Grupo Usuário (permissão leitura e escrita) 
-				 |  DONO (permissão leitura e escrita)    
-				 ↓ 
+				 ↓  DONO (permissão leitura e escrita)     
 				 informa que este item não é um diretório		
 		
 	
@@ -127,15 +127,55 @@ ________________________________________________________________________________
 ---------------------------------------------------------------------------------------------------------
 
 * comando wc pode ser utilizado para contar o número de palavras, caracteres e 
-linhas que um arquivo possui. Junto com o wc podemos utilizar a opção
+  linhas que um arquivo possui. Junto com o wc podemos utilizar a opção
 
 	 - w para indicar que desejamos contar apenas o número de palavras que existem no arquivo.
 	 - C para indicar que desejamos contar apenas o número de caracteres que existem no arquivo. 
 	 - l para indicar que desejamos contar apenas o número de linhas que existem no arquivo.
-	 
-		> wc [-w &| -c &| -l ] [arquivo]
+		> Comando:  wc [-w &| -c &| -l ] [arquivo]
 
 ---------------------------------------------------------------------------------------------------------
+* Instalando e desinstalando programas no linux.
 
+	- Exemplo: Instalando servidor ftp.
+	
+	  - apt é um sistema de gerenciamento de pacotes do próprio linux.
+	  
+	  
+		apt-get install: instala um programa dado o nome
+		apt-get remove: desinstala um programa dado o nome
+		apt-get update: busca uma lista das versões atualizadas dos programas
+		apt-cache search: procura os programas disponíveis para
+		
+
+		- Atualizando repositório. 
+			> Comando: sudo apt-get update
+			
+		- Buscando na lista de pacotes disponíveis, qualquer programa que se encaixe na busca 
+			> Comando: apt-cache search [programa_ftp] 
+			
+		- Busca especifica programas.	
+			> Comando: apt-cache search vs[programa_ftp]
+			
+		- Mostra informações sobre um determinado pacote.
+			> apt-cache show [programa_ftp]	
+			
+		- Instalando programa FTP
+			> Comando: apt-get install vs[programa_ftp]
+			
+		- Iniciando e logando no servidor FTP
+			> Comando: ftp localhost
+			> Comando: [nome_usuário]
+			> Comando: [senha_usuário]
+			
+			- Sair
+			> Comando: exit
+				
+		- Removendo programa FTP.
+			> apt-get remove [programa_ftp]	
+			
+---------------------------------------------------------------------------------------------------------	
+
+		
 
 
